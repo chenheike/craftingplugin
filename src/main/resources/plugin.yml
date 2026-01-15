@@ -1,0 +1,23 @@
+name: CustomCraftingPlugin
+version: 1.0.0
+main: com.yourname.craftingplugin.CustomCraftingPlugin
+api-version: 1.19
+description: Custom crafting recipes plugin
+author: chenheike
+commands:
+  customcraft:
+    description: Manage custom crafting recipes
+    usage: /<command> [reload|list|add]
+    permission: customcrafting.admin
+permissions:
+  customcrafting.*:
+    description: All custom crafting permissions
+    children:
+      customcrafting.admin: true
+      customcrafting.use: true
+  customcrafting.admin:
+    description: Admin permissions for custom crafting
+    default: op
+  customcrafting.use:
+    description: Use custom crafting recipes
+    default: true

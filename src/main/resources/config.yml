@@ -1,0 +1,53 @@
+# 自定义合成配方配置
+settings:
+  # 是否启用配方自动重载
+  auto-reload: true
+  # 重载检查间隔(秒)
+  reload-interval: 30
+  # 是否在玩家加入时发送提示消息
+  welcome-message: true
+
+# 自定义合成配方
+recipes:
+  # 附魔金苹果配方
+  enchanted_golden_apple:
+    enabled: true
+    result: ENCHANTED_GOLDEN_APPLE
+    amount: 1
+    shape:
+      - "GGG"
+      - "GAG"
+      - "GGG"
+    ingredients:
+      'G': GOLD_BLOCK
+      'A': APPLE
+    permission: customcrafting.use
+
+  # 自定义钻石剑配方
+  super_diamond_sword:
+    enabled: true
+    result: DIAMOND_SWORD
+    amount: 1
+    shape:
+      - " D "
+      - " D "
+      - " S "
+    ingredients:
+      'D': DIAMOND
+      'S': STICK
+    permission: customcrafting.use
+
+  # 信标配方
+  custom_beacon:
+    enabled: true
+    result: BEACON
+    amount: 1
+    shape:
+      - "GGG"
+      - "GSG"
+      - "OOO"
+    ingredients:
+      'G': GLASS
+      'S': NETHER_STAR
+      'O': OBSIDIAN
+    permission: customcrafting.use
